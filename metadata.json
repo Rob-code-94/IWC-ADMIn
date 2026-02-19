@@ -1,0 +1,7 @@
+{
+  "name": "IWC ADMIN",
+  "description": "IWC Connect Admin Console - Admin-Only Workspace",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

@@ -1,0 +1,119 @@
+
+User 1:12 PM
+please reveiw mine to see if you see an issu e?
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IWC Admin</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Inter', 'sans-serif'] },
+      colors: {
+        slate: { 
+          50: '#f8fafc',
+          100: '#f1f5f9',
+          200: '#e2e8f0',
+          300: '#cbd5e1',
+          400: '#94a3b8',
+          500: '#64748b',
+          600: '#475569',
+          700: '#334155',
+          800: '#1e293b',
+          900: '#0f172a', 
+          950: '#020617' 
+        },
+        blue: { 
+            500: '#3b82f6', 
+            600: '#007AFF', // iOS Blue
+            700: '#0056b3',
+        }
+      },
+      boxShadow: {
+        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)',
+      },
+      keyframes: {
+        'fade-in': { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+        'fade-in-up': { '0%': { opacity: '0', transform: 'translateY(10px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } }
+      },
+      animation: {
+        'fade-in': 'fade-in 0.5s ease-out',
+        'fade-in-up': 'fade-in-up 0.5s ease-out'
+      }
+    }
+  }
+}
+</script>
+<style>
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+body {
+background-color: #F2F2F7;
+}
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react/": "https://esm.sh/react@18.3.1/",
+    "react-dom": "https://esm.sh/react-dom@18.3.1?deps=react@18.3.1",
+    "react-dom/": "https://esm.sh/react-dom@18.3.1/",
+    "lucide-react": "https://esm.sh/lucide-react@0.460.0?deps=react@18.3.1",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js",
+    "firebase/firestore": "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js",
+    "firebase/storage": "https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js",
+    "firebase/functions": "https://www.gstatic.com/firebasejs/10.8.0/firebase-functions.js",
+    "@/types": "./types/index.ts",
+    "@/constants": "./constants.tsx",
+    "@/services/firebase": "./services/firebase.ts",
+    "@/services/fundingMigration": "./services/fundingMigration.ts",
+    "@/context/ClientContext": "./context/ClientContext.tsx",
+    "@/context/SidebarContext": "./context/SidebarContext.tsx",
+    "@/components/ui/LiquidGlassCard": "./components/ui/LiquidGlassCard.tsx",
+    "@/components/ui/VoiceTextArea": "./components/ui/VoiceTextArea.tsx",
+    "@/components/tabs/GlobalDashboard/GlobalDashboardView": "./components/tabs/GlobalDashboard/GlobalDashboardView.tsx",
+    "@/components/tabs/GlobalClients/GlobalClientsView": "./components/tabs/GlobalClients/GlobalClientsView.tsx",
+    "@/components/tabs/GlobalMessages/GlobalMessagesView": "./components/tabs/GlobalMessages/GlobalMessagesView.tsx",
+    "@/components/tabs/GlobalResources/GlobalResourcesView": "./components/tabs/GlobalResources/GlobalResourcesView.tsx",
+    "@/components/tabs/GlobalTasks/GlobalTasksView": "./components/tabs/GlobalTasks/GlobalTasksView.tsx",
+    "@/components/tabs/GlobalSettings/GlobalSettingsView": "./components/tabs/GlobalSettings/GlobalSettingsView.tsx",
+    "@/components/tabs/workspace/ClientWorkspace": "./components/tabs/workspace/ClientWorkspace.tsx",
+    "@/components/tabs/workspace/funding/AddLenderToOpsModal": "./components/tabs/workspace/funding/AddLenderToOpsModal.tsx",
+    "@/components/tabs/workspace/funding/EditBankModal": "./components/tabs/workspace/funding/EditBankModal.tsx",
+    "@/components/layout/AppShell": "./components/layout/AppShell.tsx",
+    "@/components/layout/Sidebar": "./components/layout/Sidebar.tsx",
+    "@/components/ErrorBoundary": "./components/ErrorBoundary.tsx",
+    "@/components/": "./components/",
+    "@/": "./",
+    "firebase/": "https://esm.sh/firebase@^12.9.0/",
+    "firebase-admin/": "https://esm.sh/firebase-admin@^13.6.1/",
+    "firebase-functions/": "https://esm.sh/firebase-functions@^7.0.5/",
+    "genkit": "https://esm.sh/genkit@^1.28.0",
+    "@genkit-ai/google-genai": "https://esm.sh/@genkit-ai/google-genai@^1.28.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans custom-scrollbar antialiased selection:bg-blue-500/20 selection:text-blue-700">
+<div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
